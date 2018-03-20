@@ -31,9 +31,16 @@ python manage.py runserver
 ```
 
 ## Screenshots
-![collection index](/screenshots/collection_index.PNG "collection index")
-![collection table](/screenshots/search_collection.PNG "search results styled with tables2")
-![member form](/screenshots/new_member.PNG "form to add a new library member")
+* collection index
+![collection index](/screenshots/collection_index.PNG?raw=true "collection index")
+
+* search results styled with tables2
+![collection table](/screenshots/search_collection.PNG?raw=true "search results styled with tables2")
+
+* form to add a new library member
+![member form](/screenshots/new_member.PNG?raw=true "form to add a new library member")
+
+* loan table display
 ![loan table](/screenshots/loans_search.PNG?raw=true "loan table display")
 
 ## Authors
