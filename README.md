@@ -31,7 +31,7 @@ python manage.py runserver
 ```
 
 ## Screenshots
-![collection index](https://github.com/myociss/django-library-management/screenshots/collection_index.png?raw=true "collection index")
+![collection index](/screenshots/collection_index.png?raw=true "collection index")
 ![collection table](https://github.com/myociss/django-library-management/screenshots/search_collection.png?raw=true "search results styled with tables2")
 ![member form](https://github.com/myociss/django-library-management/screenshots/new_member.png?raw=true "form to add a new library member")
 ![loan table](./screenshots/loans_search.png?raw=true "loan table display")
