@@ -31,10 +31,10 @@ python manage.py runserver
 ```
 
 ## Screenshots
-![alt text](screenshots/collection_index.png "collection index")
-![alt text](screenshots/search_collection.png "search results styled with tables2")
-![alt text](screenshots/new_member.png "form to add a new library member")
-![alt text](screenshots/loans_search.png "loan table display")
+![collection index](screenshots/collection_index.png?raw=true "collection index")
+![collection table](screenshots/search_collection.png?raw=true "search results styled with tables2")
+![member form](screenshots/new_member.png?raw=true "form to add a new library member")
+![loan table](screenshots/loans_search.png?raw=true "loan table display")
 
 ## Authors
 
