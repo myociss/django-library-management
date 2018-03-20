@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load render_table from django_tables2 %}
+{% block content %}
+{% csrf_token %}
+
+<ul id="messages-content">
+        {% include 'messages.html' %}
+    </ul>
+{% render_table table %}
+
+<script>
+        $(".check-in-btn").click(function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "/loans/" + $(this).attr('id') + "/check_in",
+
+                success: function(result) {
+                    alert(this)
+                    $(document).remove(this);
+                   // $(this).text('asdfsadf')
+                }
+            });
+        });
+
+        $(".fine-btn").click(function(e){
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "/loans/fines/" + $(this).attr('id') + "/pay",
+
+                complete: function(data)
+                {
+                    $.each(data.responseJSON.messages, function (i, m) {
+                        $("#messages-content").append("<li class='alert alert-"+m.level+"''>"+m.message+"</li>");
+                });
+                }
+            });
+        });
+</script>
+{% endblock content %}

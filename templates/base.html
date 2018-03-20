@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Library App</title>
+    </head>
+    <body>
+         <div class="navbar navbar-default navbar-static-top 
+            {% block nav-style %}{% endblock %}">
+                <div class="container p-none">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">Library App</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/collection">Collection</a></li>
+                                <li><a href="/loans/new_member">New Member</a></li>
+                                <li><a href="/loans">Loans</a></li>
+                                <li><a href="/loans/fines">Fines</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% block content %}{% endblock content %}
+    </body>
+</html>
